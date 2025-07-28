@@ -1,5 +1,6 @@
 import './App.css';
-import WeatherForecasts from '../WeatherForecast';
+import WeatherForecasts from "./WeatherForecast"
+
 
 
 const weatherForecasts = [
@@ -48,13 +49,8 @@ const App = () => {
   <h1>Local Weather</h1>
   <section>
 
-    {props.weatherForecasts.map((WeatherForecasts) =>
-   <WeatherForecasts
-      day={WeatherForecasts.day}
-      img={WeatherForecasts.img}
-      imgAlt={WeatherForecasts.imgAlt}
-      conditions={WeatherForecasts.conditions}
-      time={WeatherForecasts.time}
+    {weatherForecasts.map((index , props) =>
+   <WeatherForecasts key={index} props={props}
    />
     )}
    
