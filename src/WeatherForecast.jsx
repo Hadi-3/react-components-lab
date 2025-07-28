@@ -1,6 +1,5 @@
 const WeatherForecasts = (props) => {
     const {day, img, imgAlt, conditions, time} = props;
-    console.log(props.weatherForecast.time)
     return (
              <div className="weather">
                 <h2>{props.weatherForecast.day}</h2>
