@@ -1,11 +1,12 @@
 const WeatherForecasts = (props) => {
     const {day, img, imgAlt, conditions, time} = props;
+    console.log(props.weatherForecast.time)
     return (
              <div className="weather">
-                <h2>{day}</h2>
-                <img src={img} alt={imgAlt} />
-                <p><span>{conditions} </span>current weather conditions</p>
-                <p><span>{time} </span>time of day</p>
+                <h2>{props.weatherForecast.day}</h2>
+                <img src={props.weatherForecast.img} alt={props.weatherForecast.imgAlt} />
+                <p>{props.weatherForecast.conditions} </p>
+                <p><span>{props.weatherForecast.time} </span></p>
             </div>
     )
 }
